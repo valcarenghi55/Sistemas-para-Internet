@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="robots" content="index, follow"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<link rel = "stylesheet" href = ../header.css>
+	<link rel = "stylesheet" href = "../style.css">
+    
+	<title>Slideshow</title>
+ </head>
+
+<body>
+
+    <nav>
+        
+        <a href="../index.html" > <img src = "../logo.png" > </a> 
+        
+        <ul>
+            <li> <a href="../pisos/pisos.html" > Loja </a> </li>
+            <li> <a href="slide.html" > Slides</a> </li>
+            <li> <a href="#" > Sobre </a> </li>
+            <li> <a href="../contato/contato.html" > Contate-nos</a> </li>
+        </ul>
+
+    </nav>
+	
+<main class="main_content container">      
+    <section class="section-seu-codigo container">    
+        <div class="slideshow-container">
+            <div class="slideshow fade">
+                <div class="numeracao">1 / 3</div>
+                <img src="uploads/slide1.jpg" alt="slide">
+            </div>
+
+            <div class="slideshow fade">
+                <div class="numeracao">2 / 3</div>
+                <img src="uploads/slide2.jpg" alt="Slide">
+            </div>
+            <div class="slideshow fade">
+                <div class="numeracao">3 / 3</div>
+                <img src="uploads/slide3.jpg" alt="Slide">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>    
+        </div>
+        <div class="paginacao">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section><!--FECHA HTML-->
+</main>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+
+let slides = document.querySelectorAll('.slideshow');
+        let dots = document.querySelectorAll('.dot');
+        let slideIndex = 1;
+        let timeoutID;
+
+        const showSlides = (n) => {
+            let i;
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                dots[i].setAttribute('class', 'dot');
+            }
+
+
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].setAttribute('class', 'dot ativo');
+            clearTimeout(timeoutID);
+            timeoutID = setTimeout(autoSlides, 4000);
+        };
+
+        const plusSlides = (n) => {
+            showSlides(slideIndex += n);
+        };
+
+        const currentSlide = (n) => {
+            showSlides(slideIndex = n);
+        };
+
+        function autoSlides() {
+            let i;
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                dots[i].setAttribute('class', 'dot');
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].setAttribute('class', 'dot ativo');
+            timeoutID = setTimeout(autoSlides, 4000);
+        }
+
+        autoSlides();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+	
+	font-family: arial, sans-serif;	
+	
+}   
+
+body{
+	
+	font-size: 16px;
+	background-color: #fff;
+	
+}        
+			
+h1{         
+			
+	background-color:#4F4F4F;
+	color: #fff;
+	font-size:40px;
+	text-align:center;
+	
+}
+
+h2{
+	
+	background-color: #cccccc;
+	font-size: 20px;
+	
+}
+
+p{
+	
+	text-align: justify;
+	
+}
+
+table, th, td{
+	
+	text-align: center;
+	margin: auto;
+	border: 2px solid;
+	font-size: 24px;
+	
+}
+
+th{
+	
+	background-color: #ffa500;
+	font-size: 32px;
+	
+}
+
+tr:nth-child(even){
+	
+	background-color: #ffff00;
+	
+}
+
+caption{
+	
+	caption-side: bottom;
+	font-style: italic;
+	font-size: 15px;
+	
+}

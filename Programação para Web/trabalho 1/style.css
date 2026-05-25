@@ -1,0 +1,51 @@
+@font-face {
+    font-family: regular;
+    src: url(TT\ Chocolates\ Trial\ Regular.otf);
+}
+@font-face {
+    font-family: negrito;
+    src: url(TT\ Chocolates\ Trial\ Bold.otf);
+}
+@font-face {
+    font-family: demi;
+    src: url(TT\ Chocolates\ Trial\ DemiBold.otf);
+}
+@font-face {
+    font-family: fino;
+    src: url(TT\ Chocolates\ Trial\ Light.otf);
+}
+
+*{
+
+    font-family: regular, Verdana, sans-serif;
+    margin: 0px;
+
+    --amarelo: #FFC800;
+
+}
+
+.btn, .btn-primary, .form-label{
+
+    font-family: regular, Verdana, sans-serif;
+
+}
+
+.navbar .container-fluid{
+
+    background-color: var(--amarelo);
+
+}
+
+.navbar-brand{
+
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: demi, Verdana, sans-serif;
+
+}
+
+.print{
+
+    text-align: "center";
+
+}

@@ -1,0 +1,26 @@
+Trabalho sobre ordenação e pesquisa de dados
+
+Bruno Machado e Weslley
+
+ Para realizar o trabalho foi usado como base o 
+código disponibilizado no moodle, portanto, o 
+algoritmo foi feito usando vetor.
+
+ A função 'quicksort' ordena o vetor de forma 
+crescente apartir do método Quick Sort, enquanto 
+a função 'bubblesort' ordena o vetor de forma 
+decrescente apartir do método Bubble Sort. Antes 
+do usuário interagir com o programa a função 
+'quicksort' é chamada organizando o vetor de forma 
+crescente.
+
+ A função 'buscarBinario' realiza uma pesquisa 
+binaria e possui uma variável 'y' que diferencia
+se o vetor está organizado de forma crescente ou 
+decrescente.
+
+ a função 'buscarOrigem' realiza uma pesquisa
+sequencial para encontrar todos os elementos
+que possuem determinado país de origem.
+
+ 

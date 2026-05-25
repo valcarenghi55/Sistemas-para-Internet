@@ -1,0 +1,38 @@
+﻿Link para o vídeo:
+
+
+https://www.youtube.com/watch?v=tqJGcI93GfU&ab_channel=BrunoValcarenghi
+
+
+
+
+TXT - Instruções
+
+
+Super Trunfo da Política Santamariense
+
+
+Davi Froemming e Bruno Valcarenghi
+
+
+
+
+O nosso Super Trunfo tem como tema a política santamariense, com 28 cartas no baralho, diferenciadas por 3 atributos (Apoio Popular, Tempo na Política e Persuasão) e pela “Classificação” das cartas (‘S’, ‘A’, ‘B’, ‘C’ e ‘D’), contamos com vereadores eleitos na última eleição, candidatos a prefeito, candidatos a vice-prefeito e também com o atual prefeito de Santa Maria, RS.
+
+
+É jogado por 2 jogadores e podemos visualizar o baralho inicial, o baralho de cada jogador embaralhado (Não se repete) e cada rodada. Cada rodada é mostrada na tela as cartas com os atributos, a classificação das cartas, o nome do “personagem”, diferenciação do jogador 1 e do jogador 2 e indicação de quem foi o vencedor, por qual atributo e a comparação de valores.
+
+
+Quem começa o jogo(Escolhendo o atributo) é determinado de forma aleatória com o rand(). 
+
+
+O atributo é escolhido por meio de testes, que verificam se é o maior atributo, se for igual o programa escolhe o primeiro na ordem: 1° Apoio - 2° Tempo - 3° Persuasão.
+
+
+Quem ganhar escolhe o próximo atributo, porém se ocorrer um empate as cartas dos jogadores são passadas para o final do baralho de cada jogador e o jogador que escolhe o próximo atributo é definido de forma aleatória.
+
+
+Super Trunfo ganha de todos sem olhar os atributos, menos das cartas de classificação ‘A’.
+
+
+No final é mostrado na tela os dois baralhos, um estará vazio e o outro será o ganhador.

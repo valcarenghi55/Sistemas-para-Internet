@@ -1,0 +1,320 @@
+@font-face {
+
+    font-family: geometric;
+    src: url(geometric.ttf)
+    
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, arial;
+
+    --vermelho: #f8031f;
+    --bege: #F4E0B9;
+
+}
+
+.banner{
+
+    height: 85vh;
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.titulo{
+    
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff; 
+
+    color: var(--vermelho);
+    font-size: 89px;
+    font-family: geometric, arial;
+    
+}
+
+.sub_titulo{
+
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff; 
+
+    color: var(--vermelho);
+    font-size: 55px;
+    font-weight: 800;
+
+}
+
+img { vertical-align:middle; }
+
+/* pisos */
+
+header{
+	
+	background-color: var(--vermelho);
+	height: 130px;
+	text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+.legenda{
+
+    color: var(--bege);
+    font-size: 55px;
+    font-family: geometric, arial;
+    
+}
+
+.container{
+
+    padding-bottom: 100px;
+    background-size: 50%;
+    background-image: url(pisos/background.jpg);
+    animation: background 40s infinite;
+
+}
+
+
+@keyframes background{
+
+    0%{
+
+        background-position: 0% 50%;
+
+    }
+
+    100%{
+
+        background-position: 100% 50%;
+
+    }
+    
+}
+
+.produtos{
+	
+    
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    align-items:center;
+	max-width: 1600px;
+	
+}
+
+.pisos{
+    
+    margin: 100px 0px;
+	width: 300px;
+	height: 600px;
+    border-radius: 10px;
+    border: solid 2px var(--bege);
+    transition: 0.5s;
+
+    filter: brightness(100%) opacity(80%) grayscale(50%);
+	
+}
+
+.pisos{
+    
+    --porcentagem: 20%;
+
+	width: 300px;
+	height: 600px;
+    border-radius: 10px;
+    border: solid 2px var(--bege);
+    transition: 0.5s;
+
+    filter: brightness(100%) opacity(80%) grayscale(50%);
+	
+}
+
+.pisos2{
+    
+    --porcentagem: 10%;
+
+	width: 730px;
+	height: 300px;
+    border-radius: 10px;
+    border: solid 2px var(--bege);
+    transition: 0.5s;
+
+    filter: brightness(100%) opacity(80%) grayscale(50%);
+	
+}
+
+.pisos:hover,
+.pisos2:hover{
+
+    
+    border: solid 2px var(--vermelho);
+    filter: brightness(100%) opacity(100%) grayscale(0%);
+
+}
+
+.pisos_titulo{
+
+    margin: var(--porcentagem) auto;
+    font-family: geometric, arial;
+    font-size: 40px;
+    text-align: center;
+    color: #FFF;
+        
+    text-shadow: 0px 0px 10px black;
+
+}
+
+.pisos_botao{
+	
+	display:block;
+    position: absolute;
+    left: 30%;
+    top: 70%;
+	width:40%;
+
+	text-decoration: none;
+	color: var(--vermelho);
+	background-color: white;
+	border-radius: 5px;
+	padding: 3%;
+	text-align: center;
+    font-weight: bold;
+
+    transition: .3s;
+	
+}
+
+.pisos_botao:hover{
+
+	color: var(--bege);
+	background-color: var(--vermelho);
+    font-size:17px;
+    width:70%;
+    left: 15%;
+}
+
+#piso1{
+    
+    background: var(--vermelho) url(pisos/laminado.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+#piso2{
+    
+    background: var(--vermelho) url(pisos/vinilico.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+#piso3{
+    
+    background: var(--vermelho) url(pisos/carpete.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+#piso4{
+    
+    background: var(--vermelho) url(pisos/grama.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+#piso5{
+    
+    background: var(--vermelho) url(pisos/massa.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+#piso6{
+    
+    background: var(--vermelho) url(pisos/rodape.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+/* contato */
+
+.contato{
+	
+    background: transparent;
+    border: 1px solid var(--vermelho);
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    
+}
+
+.contato h2{
+	
+	font-family: geometric, arial;
+    text-align: center;
+    margin-bottom: 14px;
+    color: var(--vermelho);
+
+}
+
+form div{
+	
+	padding:5px;
+	display:flex;
+	text-align:center;
+	justify-content: center;
+
+	
+}
+
+label{
+	
+	padding:10px;
+	text-align: left;
+	width: 70px;
+	color: var(--vermelho)
+	
+}
+
+.login-input{
+	
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--vermelho);
+    border-radius: 15px;
+}
+
+.login-button{
+	
+    width: 80%;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--vermelho);
+    border: none;
+	border: solid 1px var(--vermelho);
+    border-radius: 5px;
+    cursor: pointer;
+	transition: .3s;
+	font-family:roboto, arial;
+	font-size:14px;
+	font-weight: bold;
+}
+
+.login-button:hover{
+	
+	width: 100%;
+	color:#fff;
+    background-color: var(--vermelho);
+	
+}

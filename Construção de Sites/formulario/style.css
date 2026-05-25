@@ -1,0 +1,68 @@
+*{
+
+    margin: 0;
+
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1{
+
+    margin: 30px 40px;
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+form{
+
+    margin: 0px 30px;
+
+}
+
+td{
+
+    padding: 10px;
+
+}
+
+.label{
+
+    width: 100px;
+
+}
+
+.input{
+
+    input{
+    
+        height: 20px;
+        width: 100%;
+
+    }
+
+    select{
+
+        height: 30px;
+        width: 101%;
+
+    }
+
+    textarea{
+
+        height: 150px;
+        width: 100%;
+
+    }
+
+}
+
+.radio label{
+
+    padding-right: 50px;
+
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Média do aluno</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/geral.css">
+	</head>
+	<body>
+        <div id="container">
+            <header>
+                <h1>Média do aluno</h1>
+            </header>
+            <main>
+                <section>
+                    
+                    <form method="post" action="processa.html">
+                        <fieldset>
+                            <legend>Dados pessoais</legend>
+                            <label for="campo-nome">Nome:</label>
+                            <input id="campo-nome" type="text" size=50 placeholder="digite o nome do aluno">
+                        </fieldset>
+                        <fieldset>
+                            <legend id="123">Notas do aluno</legend>
+                            <label for="nota1">Nota 1:</label>
+                            <input id="nota1" type="text" placeholder="Nota1" size=5>
+                            <label for="nota2">Nota 2:</label>
+                            <input id="nota2" type="text" placeholder="Nota2" size=5>
+                            <label for="media">Média:</label>
+                            <input  id="media" type="text" placeholder="Media" readonly="yes" size=5>
+                        </fieldset>
+
+                        
+                    </form>
+                    <button id="calcula-media" onclick="media(document.getElementById('nota1').value,document.getElementById('nota2').value)">Calcula!</button>
+                    
+                </section>
+            </main>
+        </div>
+        <script>
+          function media(n1,n2)
+                { 
+                    
+                   document.getElementById("media").style.color = "red";
+                   document.getElementById("media").value= (parseInt(n1)+parseInt(n2))/2;
+                }
+
+        </script>
+	</body>
+</html>
+
+
+

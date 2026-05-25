@@ -1,0 +1,178 @@
+*{
+	
+	margin: 0px;
+	font-family: sans-serif;
+	
+	--azul: rgb(9, 59, 105);
+    --vermelho: #f8031f;
+    --bege: #F4E0B9;
+	
+}
+body{
+	
+	text-align: justify;
+	
+	h1{
+	
+		font-weight: bolder;
+		
+	}
+	
+	h2{
+		
+		text-indent: 40px;
+		font-weight: bold;
+		
+	}
+	
+	p{
+		
+		text-indent: 30px;
+		font-size: 20px;
+		
+	}
+	
+}
+
+.navbar{ 
+
+	background-color: var(--azul);
+	
+	button{
+		
+		width: 50px;
+		height: 50px;
+		border:2px solid var(--bege);
+		color: var(--bege);
+		
+	}
+	
+	.navbar-brand{
+		
+		padding-right: 0px;
+		
+	}
+	
+	a{
+		
+		font-size: 30px;
+		transition: .3s;
+		color: var(--bege);
+		text-decoration:none;
+		padding-right: 30px;
+		border-radius: 15px;
+		
+	}
+	
+	a:hover{
+	
+		color: var(--vermelho);
+		text-decoration: underline;
+		
+		
+	
+	}
+	
+	.fundo:hover{
+			
+		background-color: var(--bege);
+		border-radius: 15px;
+			
+	}
+
+	
+}
+
+.foto{
+
+	width: 100%;
+	background-image: url('../imagens/foto.jpg');
+	background-size: cover;
+	background-position: center;
+	
+	text-align: center;
+	padding: 10% 0px;
+	
+	color: var(--bege);
+	
+	border-bottom: 5px solid var(--vermelho);
+	border-top: 5px solid var(--vermelho);
+	
+}
+
+#sobre{
+	
+	color: var(--azul);
+	background-color: var(--bege);
+
+	padding: 20px 30px;
+	
+}
+
+#cardapio{
+	
+	border-bottom: 5px solid var(--vermelho);
+	border-top: 5px solid var(--vermelho);
+	
+	padding: 20px 30px;
+	color: var(--azul);
+	
+	.item{
+		
+		border: 2px solid var(--vermelho);
+		border-radius: 30px;
+		background-color: var(--bege);
+		
+		margin: 10px;
+		padding: 20px 0px;
+		height: 500px;
+		
+		p{
+			
+			font-weight: bold;
+			padding: 10px 20px;
+			font-size: 16px;
+		
+		}
+		
+		img{
+			
+			border: 2px solid var(--vermelho);
+			border-radius: 20px;
+			margin: 0 4%;
+			width: 92%;
+			height: 300px;
+			
+		}
+		
+		transition: .3s;
+		
+	}
+	
+	.item:hover{
+
+		background-color: var(--vermelho);
+		color: var(--bege);
+		border: 2px solid var(--bege);
+		img{
+			
+			border: 2px solid var(--bege);
+			
+		}
+	}
+
+}
+
+footer{
+	
+	background-color: var(--azul);
+	color: var(--vermelho);
+	padding: 50px;
+	
+}
+
+form, .btn-primary{
+	
+	margin-top: 30px;
+	
+}
