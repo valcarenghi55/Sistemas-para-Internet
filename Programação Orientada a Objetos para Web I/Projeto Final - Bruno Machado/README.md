@@ -51,14 +51,14 @@ Para que o projeto funcione corretamente, siga os passos abaixo para configurar 
    Para adicionar o catálogo de produtos execute o seguinte comando:
     ```sql
    insert into produto(marca, modelo)
-	values 
-		('Eucafloor', 'Click'),
-		('Durafloor', 'Urban'),
-		('Durafloor', 'New Way'),
-		('Durafloor', 'Spot'),
-	 	('Quick-Step', 'Smart'),
-	 	('Quick-Step', 'Vision'),
-	 	('Tarket', 'Injoy'),
-	 	('Tarket', 'Ambienta'),
-	 	('Belgotex', 'Jazz'),
-	 	('Belgotex', 'Castilla');
+	  values 
+		 ('Eucafloor', 'Click'),
+		 ('Durafloor', 'Urban'),
+		 ('Durafloor', 'New Way'),
+		 ('Durafloor', 'Spot'),
+	 	 ('Quick-Step', 'Smart'),
+	 	 ('Quick-Step', 'Vision'),
+	 	 ('Tarket', 'Injoy'),
+	 	 ('Tarket', 'Ambienta'),
+	 	 ('Belgotex', 'Jazz'),
+	 	 ('Belgotex', 'Castilla');
